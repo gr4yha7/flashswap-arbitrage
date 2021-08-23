@@ -8,12 +8,12 @@ const weth = '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2';
 module.exports = async function (deployer) {
   await deployer.deploy(Arbitrage, uniFactory, sushiRouter);
 
-  const arbitrageInstance = await Arbitrage.deployed();
-  console.log('Starting arbitrage...')
-  try {
-    await arbitrageInstance.startArbitrage(weth, dai, 100, 0);
-  } catch (err) {
-    console.log('error while running arbitrage');
-    console.error(err)
-  }
+  // const arbitrageInstance = await Arbitrage.deployed();
+  // console.log('Starting arbitrage...')
+  // try {
+  //   await arbitrageInstance.startArbitrage(dai, weth, 0, 1);
+  // } catch (err) {
+  //   console.log('error while running arbitrage');
+  //   console.error(err)
+  // }
 };
