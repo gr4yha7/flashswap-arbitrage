@@ -8,7 +8,7 @@ import './interfaces/IERC20.sol';
 
 contract Arbitrage {
   address public factory;
-  uint constant deadline = 10 days;
+  uint constant deadline = 1631128885;
   IUniswapV2Router02 public sushiRouter;
 
   constructor(address _factory, address _sushiRouter) public {

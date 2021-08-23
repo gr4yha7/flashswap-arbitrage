@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/gr4yha7/flashswap-arbitrage#readme",
   "dependencies": {
-    "@openzeppelin/contracts": "3.4.0"
+    "@openzeppelin/contracts": "3.4.0",
+    "web3": "^1.5.2"
   }
 }
